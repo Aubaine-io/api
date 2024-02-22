@@ -1,4 +1,4 @@
-# 🗃️ Aubaine.ai **API**
+# 🗃️ Aubaine.io **API**
 
 ![Python Badge](https://img.shields.io/badge/Python-3.12-%233776AB?logo=python&logoColor=%233776AB)
 
