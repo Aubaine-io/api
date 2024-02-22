@@ -15,5 +15,9 @@ The API used for the Web and Mobile client of Aubaine.io.
 - ***info***:           Display information about the Virtual Environnement.
 - ***clean***:          Clean all the generated files and folders.
 
+## 🔗 Dependencies
+- python3.12
+- python3.12-venv
+
 ##
 Kori-san / Aubaine.io
