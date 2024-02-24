@@ -2,7 +2,7 @@
 # ~~ API
 PYVERS = python3.12
 VENV = ./.venv
-REQUIREMENTS = ./requirements.txt
+REQUIREMENTS = ./REQUIREMENTS.txt
 
 # ~~ Parameters
 ACTIVE = . ./$(VENV)/bin/activate
