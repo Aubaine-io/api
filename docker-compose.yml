@@ -1,3 +1,4 @@
+# Docker Compose File v3.3
 version: '3.3'
 
 services:
@@ -6,7 +7,7 @@ services:
     image: mysql:8.0-bullseye
     environment:
       MYSQL_RANDOM_ROOT_PASSWORD: yes
-      MYSQL_DATABASE: "aubaine_api"
+      MYSQL_DATABASE: "aubaine_database"
       MYSQL_USER: "aubaine_user"
       MYSQL_PASSWORD: "password"
     ports:
