@@ -19,7 +19,7 @@ help: ## Show this help.
 
 # ~~ Simple Workflow
 dev: check-venv ## Run the API Server on dev mode (with reload).
-	@$(ACTIVE) && uvicorn ??? --reload
+	@$(ACTIVE) && uvicorn app.main:app --reload
 
 up: ## Up a Database container and a PHPMyAdmin container for dev purposes.
 	@docker compose -p "$(PROJECT_NAME)" up -d --build --remove-orphans
