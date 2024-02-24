@@ -27,6 +27,7 @@ $ make up dev
 - ***down***:           Down the Database container and the PHPMyAdmin container upped by the `up` rule.
 - ***venv***:           Generate a Python Virtual Environnement.
 - ***install***:        Install all the files in the requirement file.
+- ***secret***:         Generate a secret using OpenSSL.
 - ***freeze***:         Update the requirement file.
 - ***info***:           Display information about the Virtual Environnement.
 - ***clean***:          Clean all the generated files and folders.

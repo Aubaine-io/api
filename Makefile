@@ -34,6 +34,9 @@ install: check-venv ## Install all the files in the requirement file.
 	@$(ACTIVE) && pip install -r $(REQUIREMENTS)
 
 # ~~ Useful tools
+secret: ## Generate a secret using OpenSSL.
+	@printf "Your generated secret is: '%s'.\n" "$$(openssl rand -hex 32)"
+
 freeze: check-venv ## Update the requirement file.
 	@$(ACTIVE) && pip freeze > $(REQUIREMENTS)
 
