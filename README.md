@@ -1,6 +1,8 @@
 # 🗃️ Aubaine.io **API**
 
 ![Python Badge](https://img.shields.io/badge/Python-3.12-%233776AB?logo=python&logoColor=%233776AB)
+![FastAPI Badge](https://img.shields.io/badge/Powered_by-FastAPI-%23009688?logo=fastapi&logoColor=%23009688)
+![SQLAlchemy Badge](https://img.shields.io/badge/Powered_by-SQLAlchemy-%23D71F00?logo=sqlalchemy&logoColor=%23D71F00)
 
 The API used for the Web and Mobile client of Aubaine.io.
 
