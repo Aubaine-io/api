@@ -1,6 +1,8 @@
+from fastapi.security import OAuth2PasswordBearer
 from app.database.attributes import SessionLocal
 
-# Dependency
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+
 def get_db():
     db = SessionLocal()
     try:
