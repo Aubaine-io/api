@@ -32,11 +32,13 @@ $ make up dev
 - ***clean***:          Clean all the generated files and folders.
 
 ## 🔗 Dependencies
+> The dependencies might vary if you choose an SQL engine different than MySQL
 - [make](https://www.gnu.org/software/make/)
 - [python3.12](https://docs.python.org/3/whatsnew/3.12.html)
 - [python3.12-venv](https://docs.python.org/3/library/venv.html)
 - [docker](https://docs.docker.com/get-docker/)
 - [docker-compose-plugin](https://docs.docker.com/compose/install/#installation-scenarios)
+- [libmysqlclient-dev]()
 
 ##
 Kori-san / Aubaine.io
