@@ -16,8 +16,8 @@ The API used for the Web and Mobile client of Aubaine.io.
 - ***clean***:          Clean all the generated files and folders.
 
 ## 🔗 Dependencies
-- python3.12
-- python3.12-venv
+- [python3.12](https://docs.python.org/3/whatsnew/3.12.html)
+- [python3.12-venv](https://docs.python.org/3/library/venv.html)
 
 ##
 Kori-san / Aubaine.io
