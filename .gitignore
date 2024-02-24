@@ -1,3 +1,7 @@
+# Aubaine's specific ignores
+aubaine_database/
+
+# ----- GitHub `.gitignore` below -----
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

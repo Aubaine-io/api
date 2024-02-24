@@ -1,5 +1,6 @@
 # ~ Variables
-# ~~ API
+# ~~ Project
+PROJECT_NAME = "aubaine"
 PYVERS = python3.12
 VENV = ./.venv
 REQUIREMENTS = ./REQUIREMENTS.txt
@@ -20,6 +21,11 @@ help: ## Show this help.
 dev: check-venv ## Run the API Server on dev mode (with reload).
 	@$(ACTIVE) && uvicorn ??? --reload
 
+up: ## Up a Database container and a PHPMyAdmin container for dev purposes.
+	@docker compose -p "$(PROJECT_NAME)" up -d --build --remove-orphans
+
+down: ## Down the Database container and the PHPMyAdmin container upped by the `up` rule.
+	@docker compose -p "$(PROJECT_NAME)" down --remove-orphans 
 venv: ## Generate a Python Virtual Environnement.
 	@$(PYVERS) -m venv $(VENV)
 

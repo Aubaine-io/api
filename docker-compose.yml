@@ -1,0 +1,41 @@
+version: '3.3'
+
+services:
+  # SQL Database Container
+  database:
+    image: mysql:8.0-bullseye
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: yes
+      MYSQL_DATABASE: "aubaine_api"
+      MYSQL_USER: "aubaine_user"
+      MYSQL_PASSWORD: "password"
+    ports:
+      - 3306:3306
+    volumes:
+      - ./aubaine_database:/var/lib/mysql
+    networks:
+      - aubaine_io
+    healthcheck:
+        test: ["CMD", "mysqladmin" ,"ping", "-h", "127.0.0.1", "--silent"]
+        interval: 5s
+        timeout: 10s
+        retries: 10
+  
+  # PHPMyAdmin Container
+  myadmin:
+    image: phpmyadmin:5.2.1-apache
+    environment:
+      PMA_HOST: database
+      PMA_PORT: 3306
+    ports:
+      - 8080:80
+    networks:
+      - aubaine_io
+    depends_on:
+      database:
+        condition: service_healthy
+
+volumes:
+  aubaine_database:
+networks:
+  aubaine_io:
