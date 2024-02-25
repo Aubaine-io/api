@@ -25,7 +25,7 @@ def read_users(token: Annotated[str, Depends(oauth2_scheme)], skip: int = 0, lim
 
 @router.get("/{user_id}", response_model=UserSchema.User)
 def read_user(token: Annotated[str, Depends(oauth2_scheme)], user_id: int, db: Session = Depends(get_db)):
-    db_user = UserLib.get_user(db, user_id=user_id)
+    db_user = UserLib.get_user_by_id(db, id=user_id)
     if db_user is None:
         raise HTTPException(status_code=404, detail="User not found\n")
     return db_user
